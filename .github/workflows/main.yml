@@ -3,12 +3,10 @@ on: [push]
 
 jobs: 
   testing_github:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps: 
       - name: Hello
-        run: |
-          echo "Hello, GitHub Actions"
+        run: echo "Hello, GitHub Actions"
 
       - name: Display repo name
-        run: |
-          echo "This workflow is running in ${{ github.repository }}"
+        run: echo "This workflow is running in ${{ github.repository }}"
